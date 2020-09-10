@@ -7,7 +7,7 @@ services:
       - 9090:9090
     volumes:
       - ./prometheus:/opt/bitnami/prometheus/data
-      - ./prometheus/prometheus.yml:/opt/bitnami/prometheus/conf/prometheus.yml
+      - ./prometheus.yml:/opt/bitnami/prometheus/conf/prometheus.yml
     networks:
       - prometheus-back
 
