@@ -17,11 +17,8 @@ services:
       - 3000:3000
     volumes:
       - ./grafana/data:/opt/bitnami/grafana/data
-      # - ./grafana/grafana.ini:/opt/bitnami/grafana/conf/grafana.ini
     networks:
       - prometheus-back
-#    dns:
-#      - hostname:'mmz-prometheus.okb-as.ru'
 
 networks:
   prometheus-back:
