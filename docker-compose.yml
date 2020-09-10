@@ -1,7 +1,7 @@
 version: "2.4"
 
 services:
-  mmz-prometheus:
+  prometheus:
     image: bitnami/prometheus:latest
     ports:
       - 9090:9090
@@ -11,7 +11,7 @@ services:
     networks:
       - prometheus-back
 
-  mmz-grafana:
+  grafana:
     image: bitnami/grafana:latest
     ports:
       - 3000:3000
